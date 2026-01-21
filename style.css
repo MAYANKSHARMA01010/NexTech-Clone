@@ -1,7 +1,7 @@
-/* Global Reset & Variables */
+
 :root {
-  --bg-color: #030712; /* Very dark slate/black */
-  --surface-color: #111827; /* Dark gray surface */
+  --bg-color: #030712;
+  --surface-color: #111827;
   --surface-hover: #1f2937;
   --primary-gradient: linear-gradient(
     135deg,
@@ -15,27 +15,26 @@
   --accent-glow: rgba(139, 92, 246, 0.5);
   --glass-bg: rgba(17, 24, 39, 0.7);
   --glass-border: rgba(255, 255, 255, 0.1);
-  --nav-height: 50px;
   --nav-height: 55px;
   --border-radius: 16px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  /* Dark Mode Specifics */
+
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   --hero-gradient-1: rgba(99, 102, 241, 0.15);
   --hero-gradient-2: rgba(217, 70, 239, 0.15);
 }
 
 [data-theme="light"] {
-    --bg-color: #f8fafc; /* Cooler, premium white/gray */
+    --bg-color: #f8fafc;
     --surface-color: #ffffff;
     --surface-hover: #f1f5f9;
-    --text-main: #0f172a; /* Deep slate for high contrast */
+    --text-main: #0f172a;
     --text-muted: #64748b;
     --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(148, 163, 184, 0.2); /* Visible subtle border */
+    --glass-border: rgba(148, 163, 184, 0.2);
     --accent-glow: rgba(99, 102, 241, 0.15);
-    /* Light Mode Specifics */
-    --card-shadow: 0 10px 40px -10px rgba(100, 116, 139, 0.2); /* Soft, large shadow */
+
+    --card-shadow: 0 10px 40px -10px rgba(100, 116, 139, 0.2);
     --hero-gradient-1: rgba(99, 102, 241, 0.1);
     --hero-gradient-2: rgba(217, 70, 239, 0.1);
 }
@@ -92,7 +91,7 @@ ul {
   padding: 0 24px;
 }
 
-/* Typography Utilities */
+
 .text-gradient {
   background: var(--primary-gradient);
   -webkit-background-clip: text;
@@ -100,7 +99,7 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
-/* Button Styles */
+
 .btn {
   display: inline-block;
   padding: 14px 32px;
@@ -156,7 +155,7 @@ ul {
     color: #6366f1;
 }
 
-/* Header & Navigation */
+
 header {
   position: fixed;
   top: 0;
@@ -219,7 +218,7 @@ nav {
   width: 100%;
 }
 
-/* Hero Section */
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -263,7 +262,7 @@ nav {
   margin-right: auto;
 }
 
-/* About Section */
+
 .about {
   padding: 120px 0;
   position: relative;
@@ -311,10 +310,10 @@ nav {
   box-shadow: var(--card-shadow);
 }
 
-/* Portfolio Section */
+
 .portfolio {
   padding: 120px 0;
-  background: var(--surface-color); /* Lightly contrasting background */
+  background: var(--surface-color);
 }
 
 .portfolio h2,
@@ -350,8 +349,8 @@ nav {
 
 .portfolio-item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1), 0 0 0 1px var(--primary-gradient); 
-  border-color: transparent; /* Use gradient border logic if possible, or simple color */
+  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1), 0 0 0 1px var(--primary-gradient);
+  border-color: transparent;
 }
 
 .portfolio-item img {
@@ -397,7 +396,7 @@ nav {
   border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
-/* CTA Section */
+
 .cta {
   padding: 100px 0;
   background: var(--primary-gradient);
@@ -435,7 +434,7 @@ nav {
   color: #4f46e5;
 }
 
-/* Contact Section */
+
 .contact {
   padding: 120px 0;
   background: var(--bg-color);
@@ -485,7 +484,7 @@ textarea {
   min-height: 150px;
 }
 
-/* Footer */
+
 footer {
   padding: 3rem 0;
   background: var(--surface-color);
@@ -494,7 +493,7 @@ footer {
   text-align: center;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
@@ -505,11 +504,11 @@ footer {
   }
 
   .nav-links {
-    display: none; /* Mobile menu implementation would go here */
+    display: none;
   }
 }
 
-/* Animations */
+
 .fade-in-up {
     opacity: 0;
     transform: translateY(30px);
